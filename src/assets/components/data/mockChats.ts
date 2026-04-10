@@ -1,5 +1,7 @@
 import type { Chat } from "../type/chat.types";
-
+import bot from '../images/avatar/bot.jpg'
+import doris from '../images/avatar/doris.jpg'
+import sara from '../images/avatar/sara.jpg'
 
 export const mockChats: Chat[] = [
   {
@@ -7,7 +9,7 @@ export const mockChats: Chat[] = [
     user: {
       id: 'Настя',
       name: 'Настя Какошка',
-      avatar: 'public/avatar/sara.jpg'
+      avatar: sara,
     },
     lastMessage: 'Ты можешь угостить меня ужином? или я умру голодной смертью',
     unreadCount: 0,
@@ -49,7 +51,7 @@ export const mockChats: Chat[] = [
     user: {
       id: 'ai_bot',
       name: 'Помощник',
-      avatar: 'public/avatar/bot.jpg'
+      avatar: bot,
     },
     lastMessage: 'Готов помочь!',
     unreadCount: 0,
@@ -70,7 +72,7 @@ export const mockChats: Chat[] = [
     user: {
       id: 'Даша',
       name: 'Даша Компотик',
-      avatar: 'public/avatar/doris.jpg'
+      avatar: doris,
     },
     lastMessage: 'Прочтите эту статью, она такая потрясающая... о смерти маленьких кроликов',
     unreadCount: 0,
