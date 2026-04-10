@@ -1,0 +1,119 @@
+.wrapper {
+  background: var(--bg-black);
+  height: 100vh;
+  width: 700px;
+}
+
+.wrapper_contact {
+  max-height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px 10px 15px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+
+}
+
+
+.user {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.subTitle {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.3;
+  max-height: 2.6em;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.count_sms {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.time {
+  font-size: 18px;
+}
+
+.count {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  padding: 2px 4px;
+  box-shadow: -5px -2px 12px #4D2E2C;
+  background: var(--bg-red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.wrapper_contact.active {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.wrapper_contact:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.01s ease;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    width: 500px;
+  }
+
+  .user {
+    width: 50px;
+    height: 50px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .subTitle {
+    font-size: 14px;
+  }
+
+  .time {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 830px) {
+  .wrapper {
+    width: 100%;
+  }
+  .subTitle {
+    padding-right: 5px;
+  }
+}
+

@@ -1,0 +1,55 @@
+.wrapperEmoji {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 6px;
+
+}
+
+.pickerWrapper {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  z-index: 1000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btnEmoji {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.imgBtnEmo {
+  width: 45px;
+}
+
+.content_messages emoji,
+.content_messages [data-emoji] {
+  font-size: 1.3em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (max-width: 1000px) {
+  .btnEmoji {
+    width: 30px;
+    height: 30px;
+  }
+
+  .imgBtnEmo {
+    width: 40px;
+  }
+}

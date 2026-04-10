@@ -1,0 +1,40 @@
+@import '../../node_modules/normalize.css/normalize.css';
+
+:root {
+  --bg-red: #D53B39;
+  --bg-black: linear-gradient(90deg, rgba(41, 44, 51, 0.96) 0%, rgba(41, 44, 51, 1) 64%);
+  --bg-redChat: linear-gradient(90deg, rgba(238, 78, 78, 0.96) 0%, rgba(241, 75, 77, 1) 50%);
+  --bg-buttonColor: linear-gradient(90deg, rgba(41, 44, 51, 0.96) 0%, rgba(41, 44, 51, 1) 64%);
+  --bg-btnSpeak: #FE4447;
+  --bg-basket: #7a7a7a;
+  --bg-basketHover: #2a2a2a;
+  --bg-playHover: #6b6a6a;
+  --bg-btnSpeakHover: #cd1216;
+  --bg-tail: rgba(238, 78, 78, 0.96);
+  --bg-nameColor: #FCFFFF;
+  --bg-textColor: #E9EDF0;
+  --bg-message-other: #1A1D24;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--bg-textColor);
+}
+
+img {
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+}
+
+
+/* @media (max-width: 1000px) {
+
+} */

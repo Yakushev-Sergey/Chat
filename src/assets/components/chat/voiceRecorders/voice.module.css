@@ -1,0 +1,129 @@
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.recordingDot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  animation: pulseShadow 1.5s ease-in-out infinite;
+  box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+}
+
+@keyframes pulseShadow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+  }
+
+  50% {
+    box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  }
+}
+
+.controlButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.btnMessage {
+  background: var(--bg-btnSpeak);
+  box-shadow: -5px -2px 12px #4D2E2C;
+}
+
+.btnMessage:hover {
+  background: var(--bg-btnSpeakHover);
+}
+
+.letter {
+  width: 25px;
+}
+
+
+.cancleButton {
+  background: var(--bg-basket);
+  box-shadow: 0px 0px 20px #646464;
+}
+
+.cancleButton:hover {
+  background: var(--bg-basketHover);
+  box-shadow: 0px 0px 20px #000000;
+}
+
+.backet {
+  width: 25px;
+}
+
+.play {
+  width: 25px;
+}
+
+.controlPause {
+  background: var(--bg-basket);
+  box-shadow: 0px 0px 20px #6a6a6a;
+}
+
+.controlPause:hover {
+  background: var(--bg-playHover);
+  box-shadow: 0px 0px 20px #6a6a6a;
+}
+
+
+/* Кнопка воспроизведения   */
+
+.brnWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btnPlay {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background: var(--bg-basket);
+  box-shadow: 0px 0px 20px #6a6a6a;
+}
+
+.btnPlayImg {
+  width: 20px;
+}
+
+.btnPlay:hover {
+  background: var(--bg-playHover);
+  box-shadow: 0px 0px 20px #6a6a6a;
+}
+
+
+@media (max-width: 1000px) {
+  .controls {
+    gap: 10px;
+  }
+
+  .controlButton {
+    width: 40px;
+    height: 40px;
+    gap: 10px;
+  }
+}
