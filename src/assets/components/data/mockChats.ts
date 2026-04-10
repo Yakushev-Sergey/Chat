@@ -7,7 +7,7 @@ export const mockChats: Chat[] = [
     user: {
       id: 'Настя',
       name: 'Настя Какошка',
-      avatar: 'src/assets/components/images/avatar/sara.jpg'
+      avatar: 'public/avatar/sara.jpg'
     },
     lastMessage: 'Ты можешь угостить меня ужином? или я умру голодной смертью',
     unreadCount: 0,
@@ -49,7 +49,7 @@ export const mockChats: Chat[] = [
     user: {
       id: 'ai_bot',
       name: 'Помощник',
-      avatar: 'src/assets/components/images/avatar/bot.jpg'
+      avatar: 'public/avatar/bot.jpg'
     },
     lastMessage: 'Готов помочь!',
     unreadCount: 0,
@@ -70,7 +70,7 @@ export const mockChats: Chat[] = [
     user: {
       id: 'Даша',
       name: 'Даша Компотик',
-      avatar: 'src/assets/components/images/avatar/doris.jpg'
+      avatar: 'public/avatar/doris.jpg'
     },
     lastMessage: 'Прочтите эту статью, она такая потрясающая... о смерти маленьких кроликов',
     unreadCount: 0,
