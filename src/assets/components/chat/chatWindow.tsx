@@ -144,7 +144,7 @@ export const ChatWindow = ({ currentChat, onSendMessage, onSendVoiceMessage, onB
   }
 
   const handleInput = (e: React.FormEvent<HTMLTextAreaElement>) => {
-    window.scroll(0, 0);
+
     const isMobile = window.innerWidth < 1000;
     const baseHeight = isMobile ? 40 : 50;
     const maxHeight = isMobile ? 120 : 150;
