@@ -22,7 +22,7 @@ input, textarea, button {
 @media (max-width: 768px) {
   body, html {
     position: fixed;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   
   .app {
