@@ -23,18 +23,16 @@ button {
 }
 
 @media (max-width: 768px) {
-
-  body,
-  html {
-    position: fixed;
+  body, html {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: hidden; /* fixed убираем */
   }
 
   .app {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    height: 100%;
   }
 }
 
