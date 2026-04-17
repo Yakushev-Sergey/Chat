@@ -16,12 +16,20 @@
   --bg-message-other: #1A1D24;
 }
 
-input,
-textarea,
-button {
+input, textarea, button {
   touch-action: manipulation;
 }
-
+@media (max-width: 768px) {
+  body, html {
+    position: fixed;
+    overflow: hidden;
+  }
+  
+  .app {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -30,7 +38,6 @@ button {
 }
 
 body {
-  overscroll-behavior: none; 
   color: var(--bg-textColor);
 }
 

@@ -135,11 +135,7 @@ export const ChatWindow = ({ currentChat, onSendMessage, onSendVoiceMessage, onB
     }
   }
 
-  const handleFocus = () => {
-    setTimeout(() => {
-      window.scrollTo(0, window.scrollY)
-    }, 50)
-  }
+
 
   // Обработчик нажатия клавиш (Enter для отправки)
   const hendleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -288,7 +284,6 @@ export const ChatWindow = ({ currentChat, onSendMessage, onSendVoiceMessage, onB
                   onChange={(e) => setMessageText(e.target.value)}
                   onKeyDown={hendleKeyDown}
                   onInput={handleInput}
-                  onFocus={handleFocus}
                   ref={textareaRef}
                   disabled={showVoiceRecorder}
                   name="message"
