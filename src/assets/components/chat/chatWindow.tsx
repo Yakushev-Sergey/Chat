@@ -137,7 +137,9 @@ export const ChatWindow = ({ currentChat, onSendMessage, onSendVoiceMessage, onB
 
   // Обработчик нажатия клавиш (Enter для отправки)
   const hendleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
+    const isMobile = window.innerWidth < 768;
+
+    if (e.key === 'Enter' && !e.shiftKey && !isMobile) {
       e.preventDefault();
       handleSend();
     }
@@ -172,7 +174,7 @@ export const ChatWindow = ({ currentChat, onSendMessage, onSendVoiceMessage, onB
         {currentChat && (
           <>
             <div className={chatWindow.middle_header}>
-              { (!isSearchOpen || !isMobilSmall) && onBack && (
+              {(!isSearchOpen || !isMobilSmall) && onBack && (
                 <button className={chatWindow.btnOnBack} onClick={onBack}>
                   <img className={chatWindow.btnOnBackIMG} src={onBackImg} alt="back" />
                 </button>
@@ -227,7 +229,7 @@ export const ChatWindow = ({ currentChat, onSendMessage, onSendVoiceMessage, onB
                   </button>
                 )}
                 {/* звонок */}
-                {(!isSearchOpen || !isMobilSmall)  && (
+                {(!isSearchOpen || !isMobilSmall) && (
                   <button className={chatWindow.header_tools_btn}>
                     <img className={chatWindow.ican} src={call} alt="#" />
                   </button>
