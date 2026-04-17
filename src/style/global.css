@@ -22,10 +22,6 @@ button {
   touch-action: manipulation;
 }
 
-textarea:focus, input:focus {
-  scroll-margin-bottom: 10vh;
-  scroll-margin-top: 10vh;
-}
 
 * {
   box-sizing: border-box;
@@ -34,6 +30,7 @@ textarea:focus, input:focus {
 }
 
 body {
+  overscroll-behavior: none; 
   color: var(--bg-textColor);
 }
 
