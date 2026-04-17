@@ -116,7 +116,7 @@
   .navigatorWrapper {
     position: fixed;
     bottom: 100px;
-    right: 30px;
+    right: 34px;
     flex-direction: column;
     gap: 10px;
     z-index: 100;
