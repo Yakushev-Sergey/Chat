@@ -16,22 +16,28 @@
   --bg-message-other: #1A1D24;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
   touch-action: manipulation;
 }
+
 @media (max-width: 768px) {
-  body, html {
+
+  body,
+  html {
     position: fixed;
     width: 100%;
-    height: 100dvh; 
+    height: 100dvh;
     overflow: hidden;
   }
-  
-  .app {
-    height: 100dvh;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
+
+}
+
+.app {
+  height: 100dvh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 * {
