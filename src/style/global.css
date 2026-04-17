@@ -21,12 +21,10 @@ input, textarea, button {
 }
 @media (max-width: 768px) {
   body, html {
-    position: fixed;
-    /* overflow: hidden; */
+    overflow: auto;
   }
   
   .app {
-    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
 }
