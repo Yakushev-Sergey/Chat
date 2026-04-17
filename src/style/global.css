@@ -23,7 +23,7 @@ input, textarea, button {
   body, html {
     position: fixed;
     width: 100%;
-    height: 100dvh;   /* ← главная правка */
+    height: 100dvh; 
     overflow: hidden;
   }
   
