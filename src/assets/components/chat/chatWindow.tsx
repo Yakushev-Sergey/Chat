@@ -287,6 +287,9 @@ export const ChatWindow = ({ currentChat, onSendMessage, onSendVoiceMessage, onB
                   ref={textareaRef}
                   disabled={showVoiceRecorder}
                   name="message"
+                  onFocus={() => {
+                    messageEndRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+                  }}
                 >
                 </textarea>
                 <ChatEmojiPicker
