@@ -16,17 +16,6 @@
   --bg-message-other: #1A1D24;
 }
 
-
-.app {
-  height: 100dvh;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-textarea:focus {
-  scroll-margin-bottom: 20vh;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,6 +24,7 @@ textarea:focus {
 
 body {
   color: var(--bg-textColor);
+  overflow-y: hidden;
 }
 
 img {
@@ -42,8 +32,6 @@ img {
 }
 
 .container {
-  height: 100dvh;
-  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   display: flex;
 }
