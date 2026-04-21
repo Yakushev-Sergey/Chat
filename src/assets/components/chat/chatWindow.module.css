@@ -128,7 +128,6 @@
   flex-direction: column;
   justify-content: flex-end;
   max-width: 65%;
-  min-height: 100%;
   margin: 0 auto;
   gap: 20px;
 }
