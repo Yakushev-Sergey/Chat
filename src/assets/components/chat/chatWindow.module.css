@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  height: 100dvh;
+  height: 100%;
   width: 100%;
   background: var(--bg-black);
 }
@@ -224,7 +224,6 @@
 
 .messages_wrapper_footer {
   display: flex;
-  /* align-items: flex-end; */
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
