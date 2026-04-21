@@ -16,19 +16,6 @@
   --bg-message-other: #1A1D24;
 }
 
-@media (max-width: 768px) {
-
-  body,
-  html {
-    position: fixed;
-    overflow: hidden;
-  }
-
-  .app {
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-}
 
 * {
   box-sizing: border-box;
@@ -49,7 +36,3 @@ img {
   display: flex;
 }
 
-
-/* @media (max-width: 1000px) {
-
-} */
