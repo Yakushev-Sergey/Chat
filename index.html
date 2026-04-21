@@ -1,14 +1,38 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Chat/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover" />
-    <title>Chat</title>
-    <script type="module" crossorigin src="/Chat/assets/index-D-dA9t46.js"></script>
-    <link rel="stylesheet" crossorigin href="/Chat/assets/index-BNehaJfb.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/Chat/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover" />
+  <title>Chat</title>
+  <script type="module" crossorigin src="/Chat/assets/index-B1UIOXTj.js"></script>
+  <link rel="stylesheet" crossorigin href="/Chat/assets/index-Bn80JoAe.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    function setAppHeight() {
+      const app = document.querySelector('.wrapper');
+      if (app) {
+        app.style.height = `${window.innerHeight}px`;
+      }
+    }
+
+    // Устанавливаем высоту при загрузке
+    setAppHeight();
+
+    // Обновляем при изменении ориентации (на мобильных)
+    window.addEventListener('orientationchange', setAppHeight);
+    window.addEventListener('resize', () => {
+      // Только для мобильных, чтобы не мешать десктопу
+      if (window.innerWidth <= 768) {
+        setAppHeight();
+      }
+    });
+
+  </script>
+</body>
+
 </html>
