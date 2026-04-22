@@ -157,11 +157,6 @@ export const ChatWindow = ({ currentChat, onSendMessage, onSendVoiceMessage, onB
     textarea.style.height = ` ${baseHeight}px `;
     textarea.style.height = Math.min(textarea.scrollHeight, maxHeight) + 'px';
 
-    setTimeout(() => {
-      if (messageEndRef.current) {
-        messageEndRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
-      }
-    }, 10);
   }
   // Фокус на textarea после вставки эмодзи
   const handleEmojiSelect = (emoji: string) => {
