@@ -257,8 +257,8 @@ export const ChatWindow = ({ currentChat, onSendMessage, onSendVoiceMessage, onB
                           <span className={chatWindow.message_time}>
                             {message.timestamp}
                             {message.isOwn && (
-                              message.status === 'read' ? '✓✓' :
-                                message.status === 'delivered' ? '✓✓' : '✓'
+                              message.status === 'read' ? ' ✓✓' :
+                                message.status === 'delivered' ? ' ✓✓' : ' ✓'
                             )}
                           </span>
                         </>

@@ -407,6 +407,10 @@
   .messages_container {
     max-width: 90%;
   }
+  .message_time {
+    font-size: 12px;
+    padding-right: 5px;
+  }
 }
 
 @media (max-width: 550px) {
